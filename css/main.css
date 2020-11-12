@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width: 100%;
+    background: rgba(0, 73, 73, 0.7) url(https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: seashell;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 128, 128, 0.8);
+    color: seashell;
+    width: 100%;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.form-container {
+    background-color: rgba(0, 128, 128, 0.8);
+    width: 700px;
+    border-radius: 5px;
+    text-align: center; 
+    margin: 20px auto;   
+    box-shadow: 0 0 20px 4px grey;
+}
+
+p {
+    font-size: 1.25em;
+    text-align: left;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+ .form-group {
+    margin: 0 auto 1em;
+    padding: 0.25rem;
+} 
+
+ label { 
+    font-size: 1.15em;
+    font-weight: 500;
+    text-align: left;
+    display: block;
+} 
+
+.form-control {
+   display: block;
+   height: 2.5rem;
+   width: 98%;
+   border: 1px solid grey;
+   outline: none;
+   border-radius: 4px;
+   margin-top: 0.5em;
+   padding: 0.3rem 0.4rem;
+   background-clip: padding-box;
+}
+
+.input-radio,
+.input-checkbox {
+    width: 1.5rem;
+    height: 1.15rem;
+}
+.input-textarea {
+    width: 98%;
+    height: 100px;
+    padding: 0.5rem 0.4rem;
+   outline: none;
+}
+
+
+button {
+    /* display: block; */
+    width: 30%;
+    height: 2.5rem;
+    padding: 0.8rem;
+    background: gray    ;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* box-shadow: 0px 2px 4px 2px rgb(180, 53, 7); */
+    border-bottom: 4px solid rgb(63, 60, 60);
+    transition: transform .2s linear, border-width .2s linear;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(3px);
+    transition: 1.5s ease-out;
+    border-width: 3px;
+    background-color: snow;
+    color: #000000;
+    border-bottom: 4px solid whitesmoke;
+}
+
+@media (max-width: 720px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        background-color: rgba(0, 128, 128, 0.8);
+        width: 80%;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2em;
+        text-transform: capitalize;
+        line-height: 1.2;
+    }
+    
+    header p {
+        font-size: 1.2em;
+        margin-top: -10px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    label { 
+        font-size: 0.9em;
+    }
+    
+    .input-radio,
+    .input-checkbox {
+        width: inherit;
+        height: inherit;
+}
+
+.form-control {
+    width: 95%;
+}
+
+.input-textarea {
+    width: 95%;
+}
+
+}

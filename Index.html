@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <header id="title">
+            <h1>gaming experience - survey form</h1>
+            <p id="description">Tell us about your gaming experience</p>
+        </header>
+
+        <div class="form-container">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name:*</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required> 
+                </div>
+
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:*</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required> 
+                </div>
+
+                <div class="form-group">
+                    <label id="age" for="age">Age:</label>
+                    <input type="number" name="age" id="number" min="5" max="80" class="form-control" placeholder="Enter your age"> 
+                </div>
+
+                <div class="form-group">
+                    <p>What is your platform(s) for gaming? (check all that apply)</p>
+                    <label>
+                        <input name="platform" type="checkbox" value="Xbox-One" class="input-checkbox">Xbox-One
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Playstation-4" class="input-checkbox">Playstation 4
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Xbox-360" class="input-checkbox">Xbox 360
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Nintendo-switch" class="input-checkbox">Nintendo Switch
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Playstation-3" class="input-checkbox">Playstation 3
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="PC" class="input-checkbox">PC/MAC
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Android-IOS" class="input-checkbox">Android/IOS
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>How many years have you been playing games?</p>
+                    <select id="dropdown" name="years" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="below-6">Below 6 Months</option>
+                        <option value="6-12">6 - 12 Months</option>
+                        <option value="1-2">1 - 2 year</option>
+                        <option value="2-3">2 - 3 years</option>
+                        <option value="3-4">3 - 4 years</option>
+                        <option value="4-5">4 - 5years</option>
+                        <option value="above 5">Over 5 years</option></select>
+                </div>
+
+                <div class="form-group">
+                    <p>Which is your favorite game?</p>
+                    <label>
+                        <input name="favorite" type="radio" value="Sports" class="input-radio" checked>Sports
+                    </label>
+                    <label>
+                        <input name="favorite" value="Adventure" type="radio" class="input-radio"/>Adventure
+                    </label>
+                    <label>
+                        <input name="favorite" type="radio" value="Action" class="input-radio">Action
+                    </label>
+                    <label>
+                        <input name="favorite" type="radio" value="Horror" class="input-radio">Horror
+                    </label>
+                    <label>
+                        <input name="favorite" type="radio" value="Simulation" class="input-radio">Simulation
+                    </label>
+                    <label>
+                        <input name="favorite" type="radio" value="idle-gaming" class="input-radio">Idle Gaming
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Additional Comments or Suggestions?</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
